@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Versão do modelo do POM -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Informações básicas do projeto -->
+    <groupId>simoes.com.br</groupId>   <!-- Grupo do seu projeto (normalmente o domínio invertido) -->
+    <artifactId>atividade-modulo23</artifactId> <!-- Nome do artefato (seu projeto) -->
+    <version>1.0-SNAPSHOT</version> <!-- Versão do projeto -->
+
+    <!-- Repositório onde o Maven irá procurar por dependências -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <!-- Dependências do seu projeto -->
+    <dependencies>
+        <!-- Dependência do Spring Boot Starter Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Dependência do Spring Boot Starter Test (para testes unitários) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Dependência de JUnit para testes (caso queira usar JUnit 5) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Plugins e configurações adicionais (se necessário) -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
